@@ -17,8 +17,11 @@ extra-deps:
 - commonmark-0.2
 - commonmark-extensions-0.2.1.2
 - commonmark-pandoc-0.2.1
+- ../skylighting/skylighting
 ghc-options:
    "$locals": -fhide-source-paths -Wno-missing-home-modules
 resolver: lts-17.12
 nix:
   packages: [zlib]
+
+system-ghc: true
